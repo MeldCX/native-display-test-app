@@ -1,0 +1,69 @@
+{
+  "name": "Display Test",
+  "short_name": "Display Test",
+  "description": "Used for testing display resolutions in Chrome OS",
+  "version": "0.0.1",
+  "version_name": "0.0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "80",
+  "kiosk_enabled": true,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "icons": {
+    "512": "icon.png"
+  },
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "webview",
+    "serial",
+    "system.network",
+    "system.display",
+    "system.memory",
+    "system.cpu",
+    "power",
+    "syncFileSystem",
+    "storage",
+    "unlimitedStorage",
+    "idle",
+    "alarms",
+    "accessibilityFeatures.read",
+    "accessibilityFeatures.modify",
+    "enterprise.deviceAttributes",
+    {
+      "fileSystem": [
+        "write",
+        "retainEntries",
+        "directory",
+        "requestFileSystem"
+      ]
+    },
+    "usb",
+    {
+      "usbDevices": [
+        {
+          "vendorId": 5246,
+          "productId": 8214
+        },
+        {
+          "interfaceClass": 0
+        },
+        {
+          "interfaceClass": 2
+        },
+        {
+          "interfaceClass": 7
+        },
+        {
+          "vendorId": 7568,
+          "productId": 8396
+        }
+      ]
+    }
+  ]
+}

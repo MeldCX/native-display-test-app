@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(92, 92, 92, 1);
+}
+
+button#reload {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.25rem;
+}
+
+#controls {
+    padding: 2rem;
+    overflow: auto;
+}
+
+.display-info {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.display-info .title {
+    font-size: 1.8rem;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+    color:rgba(92, 92, 92, 1);
+    border: 1px solid rgba(92, 92, 92, 1);
+    background-color: seashell;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 0.5rem;
+    padding-left: 0.15rem;
+    text-align: left;
+    background-color: #6cbace;
+    color: white;
+}
+
+
+th, td {
+    border: 1px solid rgba(92, 92, 92, 1);
+}
+
+#logs-container {
+    overflow: auto;
+    border-left: 2px solid rgba(0,0,0,0.4);
+    font-size: 1rem;
+    color: white;
+}
+
+#logs > pre {
+    padding: 0.5rem;
+}
+
+#logs .warn {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #342b06;
+    border-top: 1px solid #f4d29c;
+    border-bottom: 1px solid #f4d29c;
+}
+
+#logs .error {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #2d0101;
+    border-top: 1px solid #da6267;
+    border-bottom: 1px solid #da6267;
+}
+
+#logs .warn + .warn, #logs .error + .error {
+    border-top: none;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.w-25vw {
+    width: 25vw;
+}
+
+.w-50vw {
+    width: 50vw;
+}
+
+.w-100vw {
+    width: 100vw;
+}
+
+.h-25vh {
+    height: 25vh;
+}
+
+.h-50vh {
+    height: 50vh;
+}
+
+.h-100vh {
+    height: 100vh;
+}
